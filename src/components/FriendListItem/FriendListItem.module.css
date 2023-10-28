@@ -1,0 +1,30 @@
+.item {
+    width: 380px;
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+.status {
+    display: flex;
+    align-self: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+.name {
+    align-self: center;
+    font-weight: 500;
+    font-size: 16px;
+}
