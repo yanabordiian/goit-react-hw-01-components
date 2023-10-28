@@ -1,17 +1,29 @@
+import css from './App.module.css';
+import { Profile } from './Profile/Profile';
+import user from '../data/user.json';
+import { Statistics } from './Statistics/Statistics';
+
+
 export const App = () => {
+  const {
+    avatar: userAvatar,
+    username: userName,
+    tag: userTag,
+    location: userLocation,
+    stats: userStats,
+  } = user;
+
+
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-        
-      }}
-    >
-      React homework template
+    <div>
+      <Profile
+        avatar={userAvatar}
+        username={userName}
+        tag={userTag}
+        location={userLocation}
+        stats={userStats} 
+      />
+      <Statistics/>
     </div>
   );
 };
